@@ -1,8 +1,9 @@
-var express = require('express');
-
 require('./app_require'); // available everywhere
 
-var app = express();
+var User = appRequire('models/users');
 
-console.log(appRequire('models/users'));
+console.log(User.name);
+
+
+
 
